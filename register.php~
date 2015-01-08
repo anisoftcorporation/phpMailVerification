@@ -1,9 +1,0 @@
-<?php
-include("db_config.php");
-
-if($_REQUEST['submit']=='Register')
-{
- $uname = $_REQUEST['uname'];
-$
-}
-?>
