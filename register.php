@@ -1,11 +1,14 @@
 <?php
 include("db_config.php");
-
+include("site_config.php");
+include("function.php");
 if($_REQUEST['submit']=='Register')
 {
- $uname = $_REQUEST['uname'];
- $password=$_REQUEST['passwd'];
- $email=$_REQUEST['email'];
-$
+
+$mailContent=doRegister($_REQUEST);
+
+sendMail($mailContent);
+
+
 }
 ?>
