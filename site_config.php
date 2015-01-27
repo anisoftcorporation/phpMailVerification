@@ -2,6 +2,7 @@
 $site_url="http://localhost/signup/phpMailVerification";
 $site_name="Anisoft Corporation";
 $subject="Account Activation";
+$activate_mode=1;
 
 $content1="Hello ";
 $content2=",<br><br>";
@@ -27,4 +28,5 @@ define(CONTENT5,$content5);
 define(CONTENT6,$content6);
 define(CONTENT7,$content7);
 define(CONTENT8,$content8);
+define(ACTIVATE_MODE,$activate_mode);
 ?>

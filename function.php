@@ -5,7 +5,7 @@ $uname = $_REQUEST['uname'];
  $password=$_REQUEST['passwd'];
  $email=$_REQUEST['email'];
  $key = md5(rand(1,100));
- $query="insert into user_account_master values('','$uname','$email','$password','now()',0,'$key')";
+ $query="insert into user_account_master values('','$uname','$email','$password',now(),0,'$key')";
  mysql_query($query);
 
  $query_uid="select * from user_account_master where uname='$uname'";
@@ -24,6 +24,19 @@ return $body;
 }
 function sendMail($to,$subject,$body)
 {
+
+/* You will have your own mailing code depending on your server and PHP configuration */
+ 
  echo $body;
+}
+
+function verifyEmail($uid,$key)
+{
+  $update_query ="update user_account_master set state=1 where uid=$uid and act_key='$key'";
+
+   mysql_query($update_query,$link);
+   $num= mysql_affected_rows($link);
+  return $num;
+ 
 }
 ?>

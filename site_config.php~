@@ -4,7 +4,7 @@ $site_name="Anisoft Corporation";
 $subject="Account Activation";
 
 $content1="Hello ";
-$content2=",<br>";
+$content2=",<br><br>";
 $content3="Thank you for creating account with ".$site_name.".<br><br>";;
 
 $content4="Your account has been created successfully. However in order to activate your account , please click on the below link.<br><br>";

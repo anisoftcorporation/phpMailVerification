@@ -5,9 +5,9 @@ include("function.php");
 if($_REQUEST['submit']=='Register')
 {
 
-$mailContent=doRegister($_REQUEST);
+doRegister($_REQUEST);
 
-sendMail($mailContent);
+
 
 
 }
