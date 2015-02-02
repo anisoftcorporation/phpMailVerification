@@ -1,0 +1,5 @@
+<form action="login.php" method="POST">
+User Name <input type="text" name="uname">
+Password <input type ="password" name="passwd">
+<input type="submit" name="submit">
+</form>

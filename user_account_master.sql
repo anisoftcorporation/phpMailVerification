@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 07, 2015 at 04:34 PM
--- Server version: 5.5.40-0ubuntu0.14.04.1
+-- Generation Time: Feb 02, 2015 at 04:39 PM
+-- Server version: 5.5.41-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -33,10 +33,18 @@ CREATE TABLE IF NOT EXISTS `user_account_master` (
   `password` varchar(100) NOT NULL,
   `create_date` date NOT NULL,
   `state` int(11) NOT NULL,
-  `key` longtext NOT NULL,
+  `act_key` longtext NOT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `uname` (`uname`,`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `user_account_master`
+--
+
+INSERT INTO `user_account_master` (`uid`, `uname`, `email`, `password`, `create_date`, `state`, `act_key`) VALUES
+(15, 'test91', 'anirban', 'abcd', '2015-02-02', 1, 'e4da3b7fbbce2345d7772b0674a318d5'),
+(16, 'test92', 'anirban', 'abcd', '2015-02-02', 0, '1ff1de774005f8da13f42943881c655f');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

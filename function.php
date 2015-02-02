@@ -1,7 +1,7 @@
 <?php
 function doRegister($request)
 {
-$uname = $_REQUEST['uname'];
+ $uname = $_REQUEST['uname'];
  $password=$_REQUEST['passwd'];
  $email=$_REQUEST['email'];
  $key = md5(rand(1,100));
