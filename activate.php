@@ -1,13 +1,14 @@
 <?php
+
 include("db_config.php");
 include("site_config.php");
 include("function.php");
-//echo "Activate mode ".ACTIVATE_MODE;
+
 if(ACTIVATE_MODE==1)
  {
    $uid=$_REQUEST['uid'];
    $key=$_REQUEST['key'];
-   $num=verifyEmail($uid,$key)
+   $num=verifyEmail($uid,$key);
 
  }
 else

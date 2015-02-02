@@ -33,9 +33,9 @@ function sendMail($to,$subject,$body)
 function verifyEmail($uid,$key)
 {
   $update_query ="update user_account_master set state=1 where uid=$uid and act_key='$key'";
-
-   mysql_query($update_query,$link);
-   $num= mysql_affected_rows($link);
+ //echo  $update_query;
+   mysql_query($update_query);
+   $num= mysql_affected_rows();
   return $num;
  
 }

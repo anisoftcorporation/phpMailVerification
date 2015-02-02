@@ -17,16 +17,16 @@ $content7="Thanks and Regards,<br><br>";
 
 $content8="Support Team,<br><br>";
 
-define(SITE_URL,$site_url);
-define(SITE_NAME,$site_name);
-define(SUBJECT,$subject);
-define(CONTENT1,$content1);
-define(CONTENT2,$content2);
-define(CONTENT3,$content3);
-define(CONTENT4,$content4);
-define(CONTENT5,$content5);
-define(CONTENT6,$content6);
-define(CONTENT7,$content7);
-define(CONTENT8,$content8);
-define(ACTIVATE_MODE,$activate_mode);
+define('SITE_URL',$site_url);
+define('SITE_NAME',$site_name);
+define('SUBJECT',$subject);
+define('CONTENT1',$content1);
+define('CONTENT2',$content2);
+define('CONTENT3',$content3);
+define('CONTENT4',$content4);
+define('CONTENT5',$content5);
+define('CONTENT6',$content6);
+define('CONTENT7',$content7);
+define('CONTENT8',$content8);
+define('ACTIVATE_MODE',$activate_mode);
 ?>
